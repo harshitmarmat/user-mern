@@ -31,7 +31,7 @@ const UserProfile = () => {
   },[authCtx.isLoggedIn,userDetail]);
 
   const detailFormHandler = () => {
-      history.replace('https://user-app-full.herokuapp.com/detail-form');
+      history.replace('/detail-form');
   }
 
   return (

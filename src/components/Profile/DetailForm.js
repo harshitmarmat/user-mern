@@ -56,8 +56,6 @@ const DetailForm = () => {
         });
     }
 
-
-
     const userDetailHandler = (event) => {
         setNumberError(false);
         setUserNameError(false);
