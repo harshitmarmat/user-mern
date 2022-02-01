@@ -74,6 +74,7 @@ const DetailForm = () => {
 
         else{
             storeData(userName,phoneNumber,email,address);
+            alert('Detail updated')
             history.push('/profile');
         }
     }
