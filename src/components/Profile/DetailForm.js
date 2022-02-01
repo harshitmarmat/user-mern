@@ -41,7 +41,7 @@ const DetailForm = () => {
     const addressRef = useRef('');
 
     const storeData = async(userName,phoneNumber,email,address)=>{
-        await fetch('/api/store-data',{
+        await fetch('https://user-app-full.herokuapp.com/api/store-data',{
             method : 'POST',
             headers : {
                 'Content-Type' : 'application/json',

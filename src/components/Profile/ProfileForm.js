@@ -8,7 +8,7 @@ const ProfileForm = (props) => {
   const history = useHistory();
 
   const deleteAccountHandler = async()=> {
-    await fetch('/api/store-data-delete',{
+    await fetch('https://user-app-full.herokuapp.com/api/store-data-delete',{
       headers : {
         'x-access-token' : authCtx.token
       }

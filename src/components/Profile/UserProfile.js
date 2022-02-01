@@ -11,7 +11,7 @@ const UserProfile = () => {
   const [userInfo,setUserInfo] = useState(null);
   
   const userDetail = useCallback( async() => {
-    const response = await fetch('/api/store-data',{
+    const response = await fetch('https://user-app-full.herokuapp.com/api/store-data',{
       headers : {
         'x-access-token' : authCtx.token
       }
@@ -31,7 +31,7 @@ const UserProfile = () => {
   },[authCtx.isLoggedIn,userDetail]);
 
   const detailFormHandler = () => {
-      history.replace('/detail-form');
+      history.replace('https://user-app-full.herokuapp.com/detail-form');
   }
 
   return (
