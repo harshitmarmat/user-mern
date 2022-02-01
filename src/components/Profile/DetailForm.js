@@ -74,7 +74,7 @@ const DetailForm = () => {
 
         else{
             storeData(userName,phoneNumber,email,address);
-            history.replace('/profile');
+            history.push('/profile');
         }
     }
 

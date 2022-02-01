@@ -18,8 +18,7 @@ const UserProfile = () => {
     });
     const user = await response.json();
     if(user.data.name){
-      setUserInfo(user.data)
-      // setShowData(true);
+      setUserInfo(user.data);
     }
   },[authCtx.token]
   )
